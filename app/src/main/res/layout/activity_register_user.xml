@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/putih"
+        >
+
+        <RelativeLayout
+            android:id="@+id/customToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/blue2">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_backward_white"
+                android:id="@+id/registerBack"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Register"
+                android:textColor="@color/putih"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/registerBack"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                />
+            <ImageView
+                android:layout_width="@dimen/width70"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logoRegister"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_below="@+id/customToolbar"
+            android:background="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logoRegister"
+            android:text="ADMIN"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/text_admin"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_admin"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+            <EditText
+                android:id="@+id/galeriNama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edit_text"
+                android:hint="Nama"
+                android:paddingLeft="10dp"
+                android:textColor="@color/hitam"
+                android:textColorHint="@color/grayMain"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/kegiatanLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edit_text"
+                android:hint="Email"
+                android:paddingLeft="10dp"
+                android:textColor="@color/hitam"
+                android:textColorHint="@color/grayMain"
+                android:singleLine="true"
+                android:layout_below="@+id/galeriNama"
+                />
+
+            <RelativeLayout
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kegiatanLokasi">
+
+                <EditText
+                    android:id="@+id/registerPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height40"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Pass"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/grayMain"
+                    android:singleLine="true"
+                    />
+
+                <Button
+                    android:id="@+id/show_password"
+                    android:layout_width="27dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_dont_show"
+                    android:theme="@style/MyCheckbox"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/registerUser"
+                android:layout_width="310dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@color/blue2"
+                android:text="DAFTAR SEBAGAI ADMIN"
+                android:textColor="@color/putih" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

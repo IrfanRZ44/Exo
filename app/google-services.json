@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "231236630131",
+    "firebase_url": "https://exomatik-e2d53.firebaseio.com",
+    "project_id": "exomatik-e2d53",
+    "storage_bucket": "exomatik-e2d53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231236630131:android:67de2fd3af99b022",
+        "android_client_info": {
+          "package_name": "com.exomatik.irfanrz.exomatik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231236630131-md9sm3qn7nls301vqku7nbngd82ojg69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exomatik.irfanrz.exomatik",
+            "certificate_hash": "6d09a41daf8e3ea3540b260ae1f4878b04cd8166"
+          }
+        },
+        {
+          "client_id": "231236630131-40ilbuhnqk9lae17e03nud80i5u858t2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exomatik.irfanrz.exomatik",
+            "certificate_hash": "3019caba26435dc203eaeef50c96f0a29f3a515f"
+          }
+        },
+        {
+          "client_id": "231236630131-5rbl2h9d6tenkd2i8q65avuh26vnb7ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDynuP8AGEm8aGW8Zd1jEuGMCn6sxRt9C0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231236630131-5rbl2h9d6tenkd2i8q65avuh26vnb7ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

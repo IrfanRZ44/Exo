@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putihGelap1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/contentLogout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/border_detail_setting"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                >
+
+                <ImageView
+                    android:id="@+id/personPic"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/personName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/personPic"
+                    android:text="Exomatik"
+                    android:textColor="@color/blue2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/emailPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/personPic"
+                    android:text="Jl. Veteran Bakung"
+                    android:textColor="@color/grayGelap"
+                    android:textSize="14sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeAuth"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/personPic"
+                    >
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masuk"
+                        android:id="@+id/menuLogin"
+                        android:background="@drawable/border_btn_login"
+                        android:textColor="@color/putih"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/menuLogin"
+                        android:background="@drawable/border_btn_register"
+                        android:textColor="@color/grayGelap"
+                        android:id="@+id/menuRegister"
+                        />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/menuLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personPic"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/border_btn_login"
+                    android:text="Logout"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layananPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp">
+
+                <TextView
+                    android:id="@+id/textLayanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Layanan Pelanggan"
+                    android:textColor="@color/grayGelap"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/via_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/textLayanan"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp"
+                    android:paddingLeft="5dp">
+
+                    <ImageView
+                        android:id="@+id/image_lokasi"
+                        android:layout_width="@dimen/height40"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_lokasi_gray" />
+
+                    <TextView
+                        android:id="@+id/lokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_lokasi"
+                        android:text="Jl. Veteran Bakung"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lokasi"
+                        android:layout_toRightOf="@+id/image_lokasi"
+                        android:text="Lokasi Secret"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_forward" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/via_rekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/via_lokasi"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/image_rekening"
+                        android:layout_width="@dimen/height40"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_uang_gray" />
+
+                    <TextView
+                        android:id="@+id/rekening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_rekening"
+                        android:text="@string/rekening"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rekening"
+                        android:layout_toRightOf="@+id/image_rekening"
+                        android:text="@string/atas_nama"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/via_wa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/via_rekening"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/image_wa"
+                        android:layout_width="@dimen/height40"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/wa" />
+
+                    <TextView
+                        android:id="@+id/wa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_wa"
+                        android:text="082248774026"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wa"
+                        android:layout_toRightOf="@+id/image_wa"
+                        android:text="Via WhatsApp"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/via_wa"
+                    android:layout_marginTop="10dp"
+                    android:text="Tentang Kami"
+                    android:textColor="@color/grayGelap"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/about_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/textAboutUs"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/image_terms"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/terms" />
+
+                    <TextView
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_terms"
+                        android:text="@string/terms_of_service"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/terms"
+                        android:layout_toRightOf="@+id/image_terms"
+                        android:text="Terms of Service"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/fw_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_forward" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/about_versi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/about_terms"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/image_versi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_info" />
+
+                    <TextView
+                        android:id="@+id/versi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_versi"
+                        android:text="Versi Aplikasi"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/versi"
+                        android:layout_toRightOf="@+id/image_versi"
+                        android:text="V 1.0.0"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/about_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/about_versi"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_btn_register"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/image_language"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_language" />
+
+                    <TextView
+                        android:id="@+id/language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_language"
+                        android:text="Bahasa"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/language"
+                        android:layout_toRightOf="@+id/image_language"
+                        android:text="Bahasa Indonesia"
+                        android:textColor="@color/grayGelap"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

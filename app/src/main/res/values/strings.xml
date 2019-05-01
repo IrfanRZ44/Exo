@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Exomatik</string>
+    <string name="terms_of_service">Syarat dan Ketentuan</string>
+    <string name="angkatan12">Angkatan 12</string>
+    <string name="angkatan11">Angkatan 11</string>
+    <string name="angkatan10">Angkatan 10</string>
+    <string name="angkatan9">Angkatan 9</string>
+    <string name="angkatan8">Angkatan 8</string>
+    <string name="angkatan7">Angkatan 7</string>
+    <string name="angkatan6">Angkatan 6</string>
+    <string name="angkatan5">Angkatan 5</string>
+    <string name="angkatan4">Angkatan 4</string>
+    <string name="angkatan3">Angkatan 3</string>
+    <string name="angkatan2">Angkatan 2</string>
+    <string name="angkatan1">Angkatan 1</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rekening">313501016806537</string>
+    <string name="atas_nama">Transfer BRI "Alam Pelangi Istiqha"</string>
+
+    <!--<string name="google_api_key">AIzaSyBLxi2hOlCnGFxXZUVLzEAflzJioUz47aw</string>-->
+
+</resources>
